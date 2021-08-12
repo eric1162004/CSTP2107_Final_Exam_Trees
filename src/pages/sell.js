@@ -56,6 +56,7 @@ export default function Sell() {
 
   const addTree = async () => {
     let userName = session?.user.email || "user";
+
     // For some reason does not work!
     console.log(userName);
 
@@ -297,16 +298,19 @@ export default function Sell() {
               />
             </div>
             {error && <p className={"text-danger"}>{error}</p>}
-            {session && <></>}
-            <div>
-              <button
-                type="button"
-                className="btn btn-dark m-3"
-                onClick={addTree}
-              >
-                Save
-              </button>
-            </div>
+            {(session && (
+              <>
+                <div>
+                  <button
+                    type="button"
+                    className="btn btn-dark m-3"
+                    onClick={addTree}
+                  >
+                    Save
+                  </button>
+                </div>
+              </>
+            )) || <div className={`alert alert-dark my-2`}>Please Sign in first...</div>}
           </div>
         </div>
       </div>

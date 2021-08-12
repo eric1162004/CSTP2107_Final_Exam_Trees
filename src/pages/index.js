@@ -17,7 +17,7 @@ export default function Home() {
       <div className={`${styles.container}`}>
         <div className="row p-5">
           <div className="col-5">
-            <h1 className="display-4 py-5">Turn Wasted Fruit Into Money</h1>
+            <h1 className="display-4 py-3">Turn Wasted Fruit Into Money</h1>
             <p className="text-muted">Let's take a bite out of waste</p>
             <button className={`btn btn-dark`} onClick={handleFindFruitBtn}>FIND FRUIT</button>
           </div>

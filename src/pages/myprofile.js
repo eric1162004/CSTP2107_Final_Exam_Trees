@@ -12,13 +12,13 @@ export default function MyProfile({ trees }) {
 
   useEffect(() => {
     resetTrees();
-  });
+  }, []);
 
   const filterTrees = (e) => {
     let userName = session?.user.email || "user";
     let searchWord = e.target.value;
     let newTrees = stree.filter(
-      (t) => t.userName == userName && t.type.includes(searchWord)
+      (t) => (t.userName == userName && t.type.includes(searchWord))
     );
     setTree(newTrees);
   };
@@ -104,10 +104,10 @@ export default function MyProfile({ trees }) {
 
       {/* Tree list */}
       <div className={`mx-5 p-5`}>
-        <h1>My Trees:</h1>
+        <h1 className={`text-center`}>My Trees:</h1>
 
         {/* Tree Div */}
-        <div className={`row`}>
+        <div className={`row justify-content-center`}>
           {/* individual tree */}
           {renderTrees()}
         </div>
