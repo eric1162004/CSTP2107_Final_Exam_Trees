@@ -1,0 +1,32 @@
+.container{
+    padding: 2% 1%;
+    background-color: rgba(42, 66, 66, 0.301);
+}
+
+.links{
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    li{
+        padding: 5px; 
+        margin: 10px 20px;
+        min-width: 100px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.horizontalLinks{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+        cursor: pointer;
+    }
+}
