@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Online Shop</title>
+        <title>Tree Site</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
